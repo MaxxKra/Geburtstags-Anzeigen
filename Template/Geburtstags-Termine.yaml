@@ -1,0 +1,124 @@
+#       ######## ######## ##     ## ########  ##          ###    ######## ########      #
+#          ##    ##       ###   ### ##     ## ##         ## ##      ##    ##            #
+#          ##    ##       #### #### ##     ## ##        ##   ##     ##    ##            #
+#          ##    ######   ## ### ## ########  ##       ##     ##    ##    ######        #
+#          ##    ##       ##     ## ##        ##       #########    ##    ##            #
+#          ##    ##       ##     ## ##        ##       ##     ##    ##    ##            #
+#          ##    ######## ##     ## ##        ######## ##     ##    ##    ########      # 
+
+#        ######  ######## ##    ##  ######   #######  ########  ######## ##    ##       #
+#       ##    ## ##       ###   ## ##    ## ##     ## ##     ## ##       ###   ##       #
+#       ##       ##       ####  ## ##       ##     ## ##     ## ##       ####  ##       #
+#        ######  ######   ## ## ##  ######  ##     ## ########  ######   ## ## ##       #
+#             ## ##       ##  ####       ## ##     ## ##   ##   ##       ##  ####       #
+#       ##    ## ##       ##   ### ##    ## ##     ## ##    ##  ##       ##   ###       #
+#        ######  ######## ##    ##  ######   #######  ##     ## ######## ##    ##       #
+
+#########################################################################################
+#---------------------------------------------------------------------------------------#
+##-------------------------------  Geburtstags Kalender -------------------------------##
+#---------------------------------------------------------------------------------------#
+#########################################################################################
+
+#-----------------------------------------------------------
+# Geburtstags Kalender
+#-----------------------------------------------------------
+
+sensor:
+
+#-----------------------------------------------------------
+# Wer hat heute Geburtstag | NAME
+#-----------------------------------------------------------
+- name: Geburtstags Termine
+  unique_id: geburtstags_termine
+  icon: mdi:calendar-month-outline
+  state: >
+    {% set KAL = states.calendar.geburtstag.state %}
+    {% set NAME = states.calendar.geburtstag.attributes.message%}
+    {%- if KAL == 'off' %}
+    Heute keine Termine!
+    {%- elif KAL == 'on' %}
+    {{ NAME }}
+    {% else %}
+    FEHLER
+    {%- endif %}    
+
+#-----------------------------------------------------------
+# Berechnung des Alters wenn Geburtsjahr als Notiz vorhanen
+#-----------------------------------------------------------
+- name: Geburtstags Alter
+  unique_id: geburtstags_alter
+  icon: mdi:numeric-9-plus-circle-outline
+  state: >
+    {%- set GEBJAHR = states['calendar.geburtstag'].attributes.description %}
+    {%- set HEUTE = now().year %}
+    {%-if GEBJAHR != "" %}
+    {%- set ALTER = HEUTE - GEBJAHR | int %}
+    {{ ALTER }}
+    {%- else %}
+    UNBEKANNT
+    {%-endif%}
+
+#-----------------------------------------------------------
+# Geburtstag Heute | NAME + ALTER als Attribut
+#-----------------------------------------------------------
+- name: Geburtstag Heute
+  unique_id: geburtstag_heute
+  icon: mdi:calendar-month-outline
+  state: >
+    {% set KAL = states.calendar.geburtstag.state %}
+    {% set NAME = states.calendar.geburtstag.attributes.message%}
+    {%- if KAL == 'off' %}
+    Niemand
+    {%- elif KAL == 'on' %}
+    {{ NAME }}
+    {% else %}
+    FEHLER
+    {%- endif %}
+  attributes:
+    Alter: >
+      {% set KAL = states.calendar.geburtstag.state %}
+      {% set ALTER = states.sensor.geburtstags_alter.state %}
+      {%- if KAL == 'off' %}
+      UNBEKANNT
+      {%- elif KAL == 'on' %}
+      {{ ALTER }}
+      {% else %}
+      FEHLER
+      {%- endif %}
+
+#-----------------------------------------------------------
+# Text Geburtstag Allgemein
+#-----------------------------------------------------------
+- name: Geburtstags Text
+  unique_id: geburtstags_text
+  icon: mdi:calendar-month-outline
+  state: >
+    {% set KAL = states.calendar.geburtstag.state %}
+    {% set NAME = states.calendar.geburtstag.attributes.message%}
+    {% set ALTER = states.sensor.geburtstags_alter.state %}
+    {%- if KAL == 'off' %}
+    Heute hat niemand Geburtstag!
+    {%- elif KAL == 'on' %}
+    Heute hat {{ NAME }} Geburtstag und wird {{ ALTER }} Jahre alt!
+    {% else %}
+    FEHLER
+    {%- endif %}    
+
+#-----------------------------------------------------------
+# Text Geburtstag für das Dashboard
+#-----------------------------------------------------------
+- name: Geburtstags Text Dashboard
+  unique_id: geburtstags_text_dashboard
+  icon: mdi:calendar-month-outline
+  state: >
+    {% set KAL = states.calendar.geburtstag.state %}
+    {% set NAME = states.calendar.geburtstag.attributes.message%}
+    {% set ALTER = states.sensor.geburtstags_alter.state %}
+    {%- if KAL == 'off' %}
+    Niemand!
+    {%- elif KAL == 'on' %}
+    {{ NAME }} | LEVEL: {{ ALTER }}
+    {% else %}
+    FEHLER
+    {%- endif %} 
