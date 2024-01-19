@@ -1,0 +1,37 @@
+type: entities
+title: Geburtstags Infos
+entities:
+  - entity: sensor.geburtstag_maxx
+    icon: mdi:face-man-shimmer
+    type: custom:secondaryinfo-entity-row
+    secondary_info: >-
+      Alter:<b style='color:var(--primary-color)'> [[
+      sensor.geburtstag_maxx.attributes.years_at_anniversary ]]</b>
+  - entity: sensor.geburtstag_moni
+    icon: mdi:face-woman-shimmer
+    type: custom:secondaryinfo-entity-row
+    secondary_info: >-
+      Alter:<b style='color:var(--primary-color)'> [[
+      sensor.geburtstag_moni.attributes.years_at_anniversary ]]</b>
+  - entity: sensor.geburtstag_natascha
+    icon: mdi:face-man-shimmer
+    type: custom:secondaryinfo-entity-row
+    secondary_info: >-
+      Alter:<b style='color:var(--primary-color)'> [[
+      sensor.geburtstag_natascha.attributes.years_at_anniversary ]]</b>
+  - entity: sensor.geburtstag_michelle
+    icon: mdi:face-woman-shimmer
+    type: custom:secondaryinfo-entity-row
+    secondary_info: >-
+      Alter:<b style='color:var(--primary-color)'> [[
+      sensor.geburtstag_michelle.attributes.years_at_anniversary ]]</b>
+state_color: true
+view_layout:
+  grid-area: Geb1
+card_mod:
+  style: |
+    ha-card {
+      border: none;
+      background: rgba(0,0,0,0.2);
+      font-family: Arial Rounded MT;
+    }
