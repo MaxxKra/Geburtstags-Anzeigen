@@ -6,7 +6,11 @@ Das Anzeigen von Geburtstagen, also Terminen in Home Assistant ist keine Hexerei
 <!-- Dies ist ein nicht sichtbarer Kommentar -->
 ## Verwendete Integrationen:
 
-*PLATZHALTER TABELLE INTEGRATIONEN*
+<!-- CODE ZUM KOPIEREN -->
+
+| **HACS INTEGRATION** | **LINK** |
+| --- | --- |
+| Anniversaries | https://github.com/pinkywafer/Anniversaries.git |
 
 ## Google Kalender Integration
 
