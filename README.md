@@ -8,9 +8,16 @@ Das Anzeigen von Geburtstagen, also Terminen in Home Assistant ist keine Hexerei
 
 <!-- CODE ZUM KOPIEREN -->
 
-| **HACS INTEGRATION** | **LINK** |
-| --- | --- |
-| Anniversaries | https://github.com/pinkywafer/Anniversaries.git |
+| **HACS INTEGRATION** | **WO?** | **LINK** |
+| --- | --- | --- |
+| Google Kalender | Geräte und Dienste | Home Assistant Standard Integration |
+| Anniversaries | HACS | https://github.com/pinkywafer/Anniversaries.git |
+| Card Mod | HACS | https://github.com/thomasloven/lovelace-card-mod.git |
+| Button Card | HACS |  https://github.com/custom-cards/button-card.git |
+| Secondary Info | HACS | https://github.com/custom-cards/secondaryinfo-entity-row.git |
+| Atomic Calendar Revive | HACS | https://github.com/totaldebug/atomic-calendar-revive.git |
+| Layout Card | HCS |  https://github.com/thomasloven/lovelace-layout-card.git |
+
 
 ## Google Kalender Integration
 
@@ -22,3 +29,4 @@ Das Anzeigen von Geburtstagen, also Terminen in Home Assistant ist keine Hexerei
 
 
 ## Dshboard Karten
+
