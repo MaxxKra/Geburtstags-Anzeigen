@@ -10,8 +10,7 @@ Das Anzeigen von Geburtstagen, also Terminen in Home Assistant ist keine Hexerei
 
 | **HACS INTEGRATION** | **LINK** |
 | --- | --- |
-| Anniversaries | [Anniversaries](https://github.com/pinkywafer/Anniversaries.git target="_blank")
- |
+| Anniversaries | [Anniversaries](https://github.com/pinkywafer/Anniversaries.git target="_blank") |
 
 ## Google Kalender Integration
 
