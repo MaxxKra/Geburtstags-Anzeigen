@@ -27,7 +27,9 @@ Example:
 Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alter und verbleibenden Tagen bis zum Ereignis verwendet habe, ist [Anniversaries](https://github.com/pinkywafer/Anniversaries.git)
 
 Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pinkywafer an.
+
 **A big thank you to @pinkywafer for crafting this top-notch integration. With it, it's a breeze to display my anniversaries!**
+
 
 Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Beschreibungen und Codes ansehen.
 
