@@ -32,6 +32,10 @@ Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pin
 Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Codes ansehen.
 
 ### Termine über das UI
+<details>
+
+<summary>Termine erstellen über das UI</summary>
+
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_1.png" alt="Example" width="300"/>
 
@@ -43,6 +47,7 @@ Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Codes an
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_5.png" alt="Example" width="800"/>
 
+</details>
 
 ## Google Kalender Integration
 
