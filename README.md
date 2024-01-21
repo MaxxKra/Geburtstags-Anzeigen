@@ -1,11 +1,12 @@
 # ALLES ÜBER GEBURTSTAGE IN HOME ASSISTANT
 
-Das Anzeigen von Geburtstagen, also Terminen in Home Assistant ist keine Hexerei und es gibt verschiedenste Möglichkeiten diese zu integrieren bzw. anzuzeigen. Hier sind alle Informationen über Integrationen und Karten welche ich in meinem Smarthome dafür verwende.
+Das Anzeigen von Geburtstagen, ebenso wie Termine oder Ereignise in Home Assistant ist keine Hexerei und es gibt verschiedenste Möglichkeiten diese zu integrieren bzw. anzuzeigen. 
+Hier sind alle Informationen über Integrationen und Karten welche ich in meinem Smarthome dafür verwende.
 
 Example:
 ![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstags-Dshboard.png)
 
-<!-- Dies ist ein nicht sichtbarer Kommentar -->
+
 ## Verwendete Integrationen:
 
 <!-- CODE ZUM KOPIEREN -->
@@ -23,6 +24,16 @@ Example:
 
 ## Anniversaries Integration
 
+Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alter und verbleibenden Tagen bis zum Ereignis verwendet habe, ist [Anniversaries](https://github.com/pinkywafer/Anniversaries.git)
+
+Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pinkwafer an.
+
+
+Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Codes ansehen.
+
+### Termine über das UI
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_1.png" alt="Example" width="400"/>
 
 
 ## Google Kalender Integration
