@@ -33,13 +33,15 @@ Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Codes an
 
 ### Termine über das UI
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_1.png" alt="Example" width="200"/> <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_2.png" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_1.png" alt="Example" width="300"/>
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_2.png" alt="Example" width="800"/>
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_3.png" alt="Example" width="600"/>
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_4.png" alt="Example" width="600"/>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_5.png" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_5.png" alt="Example" width="800"/>
 
 
 ## Google Kalender Integration
