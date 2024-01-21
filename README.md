@@ -59,7 +59,7 @@ Für mich und meine Familienmitglieder habe ich das auf diese Art eingerichtet.
 
 <details>
 
-<summary>Termine erstellen die configuration.yaml</summary>
+<summary>Termine erstellen in der configuration.yaml</summary>
 
 ```yaml
 #-----------------------------------------------------------  
