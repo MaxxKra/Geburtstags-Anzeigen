@@ -88,6 +88,8 @@ anniversaries:
 
 ```
 
+</details>
+
 ## Google Kalender Integration
 
 
