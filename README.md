@@ -29,9 +29,11 @@ Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alt
 Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pinkwafer an.
 
 
-Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Codes ansehen.
+Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Beschreibungen und Codes ansehen.
 
 ### Termine über das UI
+
+Termine sind bei dieser Integration über das UI als das Userinterface in Home Assistant unter Geräte&Dienste ganz leicht hinzuzufügen. Eine Schritt für Schritt - Anleitung kannst du dir im Dropdownmennü ansehen.
 <details>
 
 <summary>Termine erstellen über das UI</summary>
@@ -48,6 +50,43 @@ Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Codes an
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_5.png" alt="Example" width="800"/>
 
 </details>
+
+
+Eine andere Möglichkeit ist das Erstellen von Terminen in der `configuration.yaml`.
+Für mich und meine Familienmitglieder habe ich das auf diese Art eingerichtet.
+
+<details>
+
+<summary>Termine erstellen die configuration.yaml</summary>
+
+```yaml
+#-----------------------------------------------------------  
+# Geburtstage Familie
+#-----------------------------------------------------------
+anniversaries:
+  sensors:
+  - name: Moni
+    date: '1969-01-29'
+    id_prefix: geburtstag_
+    days_as_soon: 5
+    unit_of_measurement: Tage
+  - name: Michelle
+    date: '2002-03-11'
+    id_prefix: geburtstag_
+    days_as_soon: 5
+    unit_of_measurement: Tage
+  - name: Maxx
+    date: '1978-03-12'
+    id_prefix: geburtstag_
+    days_as_soon: 5
+    unit_of_measurement: Tage
+  - name: Natascha
+    date: '2000-06-22'
+    id_prefix: geburtstag_
+    days_as_soon: 5
+    unit_of_measurement: Tage
+
+```
 
 ## Google Kalender Integration
 
