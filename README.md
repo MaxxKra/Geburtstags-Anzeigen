@@ -4,7 +4,7 @@ Das Anzeigen von Geburtstagen, ebenso wie Termine oder Ereignise in Home Assista
 Hier sind alle Informationen über Integrationen und Karten welche ich in meinem Smarthome dafür verwende.
 
 Example:
-![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstags-Dshboard.png)
+![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geburtstags-Dshboard.png)
 
 
 ## Verwendete Integrationen:
