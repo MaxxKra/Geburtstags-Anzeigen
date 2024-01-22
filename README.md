@@ -7,7 +7,7 @@ Example:
 ![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geburtstags-Dshboard.png)
 
 
-## :arrow_down: Verwendete Integrationen: :arrow_down:
+## :one: Verwendete Integrationen: :arrow_down:
 
 <!-- CODE ZUM KOPIEREN -->
 
@@ -23,7 +23,7 @@ Example:
 
 
 
-## :arrow_down: Anniversaries Integration :arrow_down:
+## :two: Anniversaries Integration :arrow_down:
 
 Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alter und verbleibenden Tagen bis zum Ereignis verwendet habe, ist [Anniversaries](https://github.com/pinkywafer/Anniversaries.git)
 
@@ -96,7 +96,7 @@ anniversaries:
 
 </details>
 
-## :arrow_down: Google Kalender Integration :arrow_down:
+## :three: Google Kalender Integration :arrow_down:
 
 Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für Neueinsteiger in Home Assistant mit der richtigen Anleitung durchführbar. In meinem Video auf Youtube kannst du dir das Schritt für Schritt ansehen.
 
@@ -111,10 +111,10 @@ Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich 
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geb_Termin_3.png" alt="Example" width="800"/>
 
-## :arrow_down: Template Alter berechnen :arrow_down:
+## :four: Template Alter berechnen :arrow_down:
 
 
 
 
-## :arrow_down: Dshboard Karten :arrow_down:
+## :five: Dshboard Karten :arrow_down:
 
