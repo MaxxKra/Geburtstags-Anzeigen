@@ -96,7 +96,7 @@ anniversaries:
 
 Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für Neueinsteiger in Home Assistant mit der richtigen Anleitung durchführbar. In meinem Video auf Youtube kannst du dir das Schritt für Schritt ansehen.
 
-Hier kommst du zur offiziellen Dokumentation der Google Integration: [DOKUMENTATION](https://www.home-assistant.io/integrations/google)
+Hier kommst du zur offiziellen Dokumentation der Google Integration: [DOKUMENTATION](https://www.home-assistant.io/integrations/google target="_blank")
 
 ## Template Alter berechnen
 
