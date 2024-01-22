@@ -26,7 +26,7 @@ Example:
 
 Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alter und verbleibenden Tagen bis zum Ereignis verwendet habe, ist [Anniversaries](https://github.com/pinkywafer/Anniversaries.git)
 
-Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pinkywafer an.
+Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pinkywafer bzw. anhand meines Videos auf YouTube an.
 
 **A big thank you to @pinkywafer for crafting this top-notch integration. With it, it's a breeze to display my anniversaries!**
 
@@ -94,6 +94,9 @@ anniversaries:
 
 ## Google Kalender Integration
 
+Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für Neueinsteiger in Home Assistant mit der richtigen Anleitung durchführbar. In meinem Video auf Youtube kannst du dir das Schritt für Schritt ansehen.
+
+Hier kommst du zur offiziellen Dokumentation der Google Integration: [DOKUMENTATION](https://www.home-assistant.io/integrations/google)
 
 ## Template Alter berechnen
 
