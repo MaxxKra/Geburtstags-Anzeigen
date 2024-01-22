@@ -7,7 +7,7 @@ Example:
 ![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geburtstags-Dshboard.png)
 
 
-## Verwendete Integrationen:
+## :arrow_down: Verwendete Integrationen: :arrow_down:
 
 <!-- CODE ZUM KOPIEREN -->
 
@@ -22,11 +22,11 @@ Example:
 | Layout Card | HCS |  https://github.com/thomasloven/lovelace-layout-card.git |
 
 
-## Anniversaries Integration
+## :arrow_down: Anniversaries Integration :arrow_down:
 
 Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alter und verbleibenden Tagen bis zum Ereignis verwendet habe, ist [Anniversaries](https://github.com/pinkywafer/Anniversaries.git)
 
-Wie diese Integration zuinstallieren ist, sieh dir auf der Github Seite von @pinkywafer bzw. anhand meines Videos auf YouTube an.
+Wie diese Integration zu installieren ist, sieh dir auf der Github Seite von @pinkywafer bzw. anhand meines Videos auf YouTube an.
 
 **A big thank you to @pinkywafer for crafting this top-notch integration. With it, it's a breeze to display my anniversaries!**
 
@@ -58,6 +58,9 @@ Eine andere Möglichkeit ist das Erstellen von Terminen in der `configuration.ya
 Für mich und meine Familienmitglieder habe ich das auf diese Art eingerichtet.
 
 <details>
+
+
+### Termine in der Configurtation.yaml
 
 <summary>Termine erstellen in der configuration.yaml</summary>
 
