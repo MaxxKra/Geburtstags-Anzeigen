@@ -1,3 +1,6 @@
+# :wrench: README NOCH IN ARBEIT! :wrench:
+
+
 # ALLES ÜBER GEBURTSTAGE IN HOME ASSISTANT
 
 Das Anzeigen von Geburtstagen, ebenso wie Termine oder Ereignise in Home Assistant ist keine Hexerei und es gibt verschiedenste Möglichkeiten diese zu integrieren bzw. anzuzeigen. 
