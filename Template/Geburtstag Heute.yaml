@@ -1,0 +1,102 @@
+#            ######## ########  ####  ######    ######   ######## ########              #
+#               ##    ##     ##  ##  ##    ##  ##    ##  ##       ##     ##             #
+#               ##    ##     ##  ##  ##        ##        ##       ##     ##             #
+#               ##    ########   ##  ##   #### ##   #### ######   ########              #
+#               ##    ##   ##    ##  ##    ##  ##    ##  ##       ##   ##               #
+#               ##    ##    ##   ##  ##    ##  ##    ##  ##       ##    ##              #
+#               ##    ##     ## ####  ######    ######   ######## ##     ##             #
+                                                                                         
+#             ######  ######## ##    ##  ######   #######  ########                     #
+#            ##    ## ##       ###   ## ##    ## ##     ## ##     ##                    #
+#            ##       ##       ####  ## ##       ##     ## ##     ##                    #
+#             ######  ######   ## ## ##  ######  ##     ## ########                     #
+#                  ## ##       ##  ####       ## ##     ## ##   ##                      #
+#            ##    ## ##       ##   ### ##    ## ##     ## ##    ##                     #
+#             ######  ######## ##    ##  ######   #######  ##     ##                    #
+
+#########################################################################################
+#---------------------------------------------------------------------------------------#
+##----------------------  Aktueller Geburtstag aus dem Kalender -----------------------##
+#---------------------------------------------------------------------------------------#
+#########################################################################################
+
+#-----------------------------------------------------------
+# Eintrag aus dem Geburtstags - Kalender
+#-----------------------------------------------------------
+
+
+#-----------------------------------------------------------
+# Auslöser - Aktion starten (Alle 15 Min. und HA Neustart)
+#-----------------------------------------------------------
+trigger:
+  - platform: time_pattern
+    minutes: /15
+  - platform: homeassistant
+    event: start
+
+#-----------------------------------------------------------
+# Aktion - Events abrufen (Heute)
+#-----------------------------------------------------------
+action:
+  - service: calendar.get_events
+    target:
+      entity_id: calendar.geburtstag
+    data:
+      start_date_time: "{{ today_at('00:00:01') }}"
+      end_date_time: "{{ today_at('23:59:59') }}"
+    response_variable: today_bithday_events
+
+#-----------------------------------------------------------
+# Sensor mit Attributen anlegen
+#-----------------------------------------------------------
+sensor:
+  - name: Geburtstag Heute
+    unique_id: geburtstag_heute
+    state: "{{ today_bithday_events['calendar.geburtstag'].events | count() }}"
+    attributes:
+      scheduled_events: >
+        {%- set HEUER = now().year %}
+        {%- set HEUTE = today_at() %}
+        {%- set data = namespace(result=[]) %}
+        {%- for event in today_bithday_events['calendar.geburtstag'].events %}
+          {%- if event.description is defined %}
+            {%- set JAHR = event.description | regex_findall('(\d{4})') | first %}
+          {%- endif %}
+          {%- set START = strptime(event.start, '%Y-%m-%d') %}
+          {%- set DATUM = START.strftime("%d.%m.%Y") %}
+          {%- set GEBDAT = event.start | as_datetime | as_local %}
+          {%- set TAGE = (GEBDAT - HEUTE).days %}
+          {%- if TAGE == 0 %}
+            {%- set INTAGEN = "Heute" %}
+          {%- elif TAGE == 1 %}
+            {%- set INTAGEN = "Morgen" %}
+          {%- else %}
+            {%- set INTAGEN = "in " + TAGE|string + " Tagen" %}
+          {%- endif %}
+          {%- set NAME = event.summary %}
+          {%- if event.description is defined %}
+            {%- set NOTIZ = event.description | default('') %}
+          {%- else %}
+            {%- set NOTIZ = '' %}
+          {%- endif %}
+          {%- set HINWEIS = NOTIZ | regex_replace('\d{4}', '') | trim %}
+          {%- if JAHR is defined %}
+            {%- set ALTER = HEUER - JAHR | int %}
+          {%- else %}
+            {%- set ALTER = "??" %}
+          {%- endif %}
+          
+          {%- set event_dict = {
+              'Datum': DATUM,
+              'Name': NAME,
+              'Notiz': NOTIZ,
+              'Alter': ALTER,
+              'Hinweis': HINWEIS,
+              'Geburtstag': INTAGEN
+            }
+          %}
+          
+          {%- set data.result = data.result + [(event_dict)] %}
+        {%- endfor %}
+        {{ data.result }}
+    icon: mdi:calendar
