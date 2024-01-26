@@ -13,7 +13,8 @@ Beispiel:
   
 <br>
 
-<p align="center">Wenn du Interesse daran hast, mich, meinen Kanal oder meine kreative Arbeit zu unterstützen, freue ich mich über jeglichen Support:
+<p align="center">Wenn du Interesse daran hast, mich, meinen Kanal oder meine kreative Arbeit zu unterstützen,  
+freue ich mich über jeglichen Support:
 </p>
 <p align="center">
   <a href="https://www.buymeacoffee.com/">
