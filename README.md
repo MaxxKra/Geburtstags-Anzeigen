@@ -27,6 +27,8 @@ Beispiel:
 
 ### <p align="center">Danke</p>
 
+<br>
+
 ## :one: Verwendete Integrationen:
 
 <!-- CODE ZUM KOPIEREN -->
@@ -43,6 +45,8 @@ Beispiel:
 | Markdown Card | Lovelace | Home Assistant Standard Karte |
 | Expander Card | HACS | https://github.com/Alia5/lovelace-expander-card.git |
 
+
+<br>
 
 
 ## :two: Anniversaries Integration:
@@ -118,6 +122,9 @@ anniversaries:
 
 </details>
 
+<br>
+
+
 ## :three: Google Kalender Integration:
 
 Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für Neueinsteiger in Home Assistant mit der richtigen Anleitung durchführbar. In meinem Video auf Youtube kannst du dir das Schritt für Schritt ansehen.
@@ -125,7 +132,8 @@ Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für N
 Hier kommst du zur offiziellen Dokumentation der Google Integration: [GOOGLE INTEGRATION](https://www.home-assistant.io/integrations/google)
 
 
-Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich das Geburtsjahr als Notiz dem Termin beigefügt. In Home Assistant wird diese Notiz als Attribut `description:` angezeigt.
+Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich das Geburtsjahr als Notiz dem Termin beigefügt. In Home Assistant wird diese Notiz als Attribut `description:` angezeigt. Mit dem von mir erstellten Template, ist es auch kein Problem, wenn zusätzlich zu der 4 Stelligen Jahreszahl noch ein Text als Hinweis oder dergleichen in der Termin-Notiz eingetragen wird.
+
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geb_Termin_1.png" alt="Example" width="600"/>
 
@@ -133,14 +141,19 @@ Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich 
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geb_Termin_3.png" alt="Example" width="800"/>
 
+<br>
+
+
 ## :four: Template Alter berechnen:
 
 
+<br>
 
 
 ## :five: Template Gerburtstage-Liste:
 
 
+<br>
 
 
 ## :six: Dshboard Karten :arrow_down:
