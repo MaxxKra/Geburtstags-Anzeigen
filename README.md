@@ -10,11 +10,17 @@ Example:
 ![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Ansicht.gif)
 
 
-## :one: Verwendete Integrationen: :arrow_down:
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/bastler)
+
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/kramlmaxx)
+
+
+## :one: Verwendete Integrationen:
 
 <!-- CODE ZUM KOPIEREN -->
 
-| **HACS INTEGRATION** | **WO?** | **LINK** |
+| **INTEGRATION / Karten** | **WO?** | **LINK** |
 | --- | --- | --- |
 | Google Kalender | Geräte und Dienste | Home Assistant Standard Integration |
 | Anniversaries | HACS | https://github.com/pinkywafer/Anniversaries.git |
@@ -23,10 +29,12 @@ Example:
 | Secondary Info | HACS | https://github.com/custom-cards/secondaryinfo-entity-row.git |
 | Atomic Calendar Revive | HACS | https://github.com/totaldebug/atomic-calendar-revive.git |
 | Layout Card | HCS |  https://github.com/thomasloven/lovelace-layout-card.git |
+| Markdown Card | Lovelace | Home Assistant Standard Karte |
+| Expander Card | HACS | https://github.com/Alia5/lovelace-expander-card.git |
 
 
 
-## :two: Anniversaries Integration :arrow_down:
+## :two: Anniversaries Integration:
 
 Die erste Integration, welche ich zur Anzeige von unseren Geburtstagen incl. Alter und verbleibenden Tagen bis zum Ereignis verwendet habe, ist [Anniversaries](https://github.com/pinkywafer/Anniversaries.git)
 
@@ -42,7 +50,7 @@ Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Beschrei
 Termine sind bei dieser Integration über das UI als das Userinterface in Home Assistant unter Geräte&Dienste ganz leicht hinzuzufügen. Eine Schritt für Schritt - Anleitung kannst du dir im Dropdownmennü ansehen.
 <details>
 
-<summary>Termine erstellen über das UI</summary>
+<summary>:arrow_down_small: Termine erstellen über das UI :arrow_down_small:</summary>
 
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/HA_Int_1.png" alt="Example" width="300"/>
@@ -66,7 +74,7 @@ Für mich und meine Familienmitglieder habe ich das auf diese Art eingerichtet.
 
 ### Termine in der Configurtation.yaml
 
-<summary>Termine erstellen in der configuration.yaml</summary>
+<summary>:arrow_down_small: Termine erstellen in der configuration.yaml :arrow_down_small:</summary>
 
 ```yaml
 #-----------------------------------------------------------  
@@ -99,7 +107,7 @@ anniversaries:
 
 </details>
 
-## :three: Google Kalender Integration :arrow_down:
+## :three: Google Kalender Integration:
 
 Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für Neueinsteiger in Home Assistant mit der richtigen Anleitung durchführbar. In meinem Video auf Youtube kannst du dir das Schritt für Schritt ansehen.
 
@@ -114,7 +122,7 @@ Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich 
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Geb_Termin_3.png" alt="Example" width="800"/>
 
-## :four: Template Alter berechnen :arrow_down:
+## :four: Template Alter berechnen:
 
 
 
