@@ -26,8 +26,13 @@ freue ich mich über jeglichen Support:
   </a>
 </p>
 <br>
-<p align="center">## Danke
-</p>
+
+###
+
+Danke
+
+###
+
 ## :one: Verwendete Integrationen:
 
 <!-- CODE ZUM KOPIEREN -->
