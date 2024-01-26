@@ -8,13 +8,19 @@ Hier sind alle Informationen über Integrationen und Karten welche ich in meinem
 
 <br>
 
-Example:
-![Example](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Ansicht.gif)
+Beispiel:
+![Beispiel](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Ansicht.gif)
   
 <br>
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/)   [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/kramlmaxx)
-
+<p align="center">
+  <a href="https://www.buymeacoffee.com/">
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp; <!-- Füge hier so viele Abstände ein, wie du möchtest -->
+  <a href="https://www.paypal.me/kramlmaxx">
+    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal Donate">
+  </a>
+</p>
 <br>
 
 ## :one: Verwendete Integrationen:
