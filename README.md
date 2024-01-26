@@ -12,6 +12,9 @@ Beispiel:
 ![Beispiel](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Ansicht.gif)
   
 <br>
+
+<p align="center">Wenn du Interesse daran hast, mich, meinen Kanal oder meine kreative Arbeit zu unterstützen, freue ich mich über jeglichen Support:
+</p>
 <p align="center">
   <a href="https://www.buymeacoffee.com/">
     <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
