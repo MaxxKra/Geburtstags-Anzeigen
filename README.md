@@ -13,7 +13,7 @@ Beispiel:
   
 <br>
 
-<p align="center">Wenn du Interesse daran hast, mich, meinen Kanal oder meine kreative Arbeit zu unterstützen,<br>
+### <p align="center">Wenn du Interesse daran hast, mich, meinen Kanal oder meine kreative Arbeit zu unterstützen,<br>
 freue ich mich über jeglichen Support:
 </p>
 <p align="center">
@@ -25,7 +25,6 @@ freue ich mich über jeglichen Support:
     <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal Donate">
   </a>
 </p>
-<br>
 
 ### <p align="center">Danke</p>
 
