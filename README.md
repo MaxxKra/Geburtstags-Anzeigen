@@ -27,11 +27,7 @@ freue ich mich über jeglichen Support:
 </p>
 <br>
 
-###
-
-Danke
-
-###
+### <p align="center">Danke</p>
 
 ## :one: Verwendete Integrationen:
 
