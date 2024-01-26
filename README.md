@@ -144,13 +144,13 @@ Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich 
 <br>
 
 
-## :four: Template Alter berechnen:
+## :four: Template Geburtstag Heute:
 
 
 <br>
 
 
-## :five: Template Gerburtstage-Liste:
+## :five: Template Gerburtstag Liste:
 
 
 <br>
