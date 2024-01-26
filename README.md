@@ -16,7 +16,7 @@ Beispiel:
   <a href="https://www.buymeacoffee.com/">
     <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
   </a>
-  &nbsp;&nbsp;&nbsp;&nbsp; <!-- Füge hier so viele Abstände ein, wie du möchtest -->
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.paypal.me/kramlmaxx">
     <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal Donate">
   </a>
