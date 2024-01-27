@@ -1,7 +1,7 @@
 # Das Geburtstags-PupUp
 
 
-Um am Dashboard zu einem bestimmten Zeitpunkt über einen aktueellen Geburtstag informiert zu werden, habe ich ein PopUp erstellt.
+Um am Dashboard zu einem bestimmten Zeitpunkt über einen aktuellen Geburtstag informiert zu werden, habe ich ein PopUp erstellt.
 
 Dieses PopUp wird mittels Zeitplan (kann aber auch jeder andere Auslöser sein) aktiviert, und zeigt den Namen und das Alter auf einer Torte.
 
@@ -17,10 +17,10 @@ Benutz habe ich dazu:
 - input_button.button_geburtstag (Helfer Taste)
 - input_button.geburtstag_gelesen (Helfer Taste)
 - custom:button-card (HACS Frontend Integration)
-- sensor.geburtstags_termine (Angelegter Remplate Sensor)
-- sensor.geburtstags_alter (Angelegter Remplate Sensor)
+- sensor.geburtstags_termine (Angelegter Template Sensor)
+- sensor.geburtstags_alter (Angelegter Template Sensor)
 - Bild der Torte
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Anniversaries/Torte.png" alt="Example" width="3200"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Torte.png" alt="Example" width="3200"/>
 
 
 <br>
