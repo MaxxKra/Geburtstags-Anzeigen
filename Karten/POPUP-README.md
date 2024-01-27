@@ -20,7 +20,7 @@ Benutz habe ich dazu:
 - sensor.geburtstags_termine (Angelegter Template Sensor)
 - sensor.geburtstags_alter (Angelegter Template Sensor)
 - Bild der Torte
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Torte.png" alt="Example" width="3200"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Torte.png" alt="Example" width="200"/>
 
 
 <br>
