@@ -150,6 +150,130 @@ Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich 
 
 ## :four: Template Geburtstag Heute:
 
+Um nun die Kalender Einträge in Home Assistant auszuwerten, habe ich mehrere Template Sensoren erstellt.
+
+Das Erste, ist ein Template um einen aktuellen Termin (Geburtstag Heute) aus dem Kalender zu suchen und ihn in einen Sensor mit Attributen umzuwandeln. Dieser Sensor hat folgende Werte:
+
+Zustand:
+- **Anzahl der Einträge Heute**
+Attribute:
+- **Name**
+- **Datum**
+- **Alter**
+- **Notiz** (gesamt)
+- **Hinweis** (Notiz ohne eventuelle Jahreszahl)
+
+
+<br>
+
+Um diese Werte zu erhalten, ist lediglich das Template in Home Assistant einzutragen. Hier handelt es sich um "Auslöser-basierende-Template-Entitäten", dass bedeutet dieses Template wird durch einen Auslöser aktiviert.
+
+In Falle dieser Templates ist der Auslöser einmal ein Zeitinterval von 15 Minuten und zum Zweiten der Neustart von Home Assistant.
+
+Wenn einer dieser Auslöser eintritt, wird aus dem Google Kalender eine Listen-Abfrage gestartet.
+
+Der Sensor wird dann aus dieser Liste erstellt.
+
+In meinem Fall sind Sensoren und Templates aus der `configuration.yaml` ausgelagert und in separaten Ordnern bzw. Dateien gespeichert. 
+
+Das Template für "Geburtstag Heute" ist in der Dropdown Sektion zum kopieren bereitgestellt:
+
+
+<details>
+
+
+### Template Geburtstag Heute
+
+<summary>:arrow_down_small: Template Geburtstag Heute :arrow_down_small:</summary>
+
+```yaml
+#
+# **Beim Eintrag in configuration.yaml**
+#
+# template:
+#   - trigger:
+#
+#     action:
+#
+#     sensor:
+#
+```
+
+```yaml
+#-----------------------------------------------------------  
+# **Template Geburtstag Heute**
+#-----------------------------------------------------------
+trigger:
+  - platform: time_pattern
+    minutes: /15
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id:
+      - input_button.trigger_update
+action:
+  - service: calendar.get_events
+    target:
+      entity_id: calendar.geburtstag
+    data:
+      start_date_time: "{{ today_at('00:00:01') }}"
+      end_date_time: "{{ today_at('23:59:59') }}"
+    response_variable: today_bithday_events
+sensor:
+  - name: Geburtstag Heute
+    unique_id: geburtstag_heute
+    state: "{{ today_bithday_events['calendar.geburtstag'].events | count() }}"
+    attributes:
+      scheduled_events: >
+        {%- set HEUER = now().year %}
+        {%- set HEUTE = today_at() %}
+        {%- set data = namespace(result=[]) %}
+        {%- for event in today_bithday_events['calendar.geburtstag'].events %}
+          {%- if event.description is defined %}
+            {%- set JAHR = event.description | regex_findall('(\d{4})') | first %}
+          {%- endif %}
+          {%- set START = strptime(event.start, '%Y-%m-%d') %}
+          {%- set DATUM = START.strftime("%d.%m.%Y") %}
+          {%- set GEBDAT = event.start | as_datetime | as_local %}
+          {%- set TAGE = (GEBDAT - HEUTE).days %}
+          {%- if TAGE == 0 %}
+            {%- set INTAGEN = "Heute" %}
+          {%- elif TAGE == 1 %}
+            {%- set INTAGEN = "Morgen" %}
+          {%- else %}
+            {%- set INTAGEN = "in " + TAGE|string + " Tagen" %}
+          {%- endif %}
+          {%- set NAME = event.summary %}
+          {%- if event.description is defined %}
+            {%- set NOTIZ = event.description | default('') %}
+          {%- else %}
+            {%- set NOTIZ = '' %}
+          {%- endif %}
+          {%- set HINWEIS = NOTIZ | regex_replace('\d{4}', '') | trim %}
+          {%- if JAHR is defined %}
+            {%- set ALTER = HEUER - JAHR | int %}
+          {%- else %}
+            {%- set ALTER = "??" %}
+          {%- endif %}
+          
+          {%- set event_dict = {
+              'Datum': DATUM,
+              'Name': NAME,
+              'Notiz': NOTIZ,
+              'Alter': ALTER,
+              'Hinweis': HINWEIS,
+              'Geburtstag': INTAGEN
+            }
+          %}
+          
+          {%- set data.result = data.result + [(event_dict)] %}
+        {%- endfor %}
+        {{ data.result }}
+    icon: mdi:calendar
+
+```
+
+</details>
 
 <br>
 
