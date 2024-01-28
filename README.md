@@ -97,26 +97,30 @@ Für mich und meine Familienmitglieder habe ich das auf diese Art eingerichtet.
 #-----------------------------------------------------------
 anniversaries:
   sensors:
-  - name: Moni
-    date: '1969-01-29'
-    id_prefix: geburtstag_
-    days_as_soon: 5
-    unit_of_measurement: Tage
-  - name: Michelle
-    date: '2002-03-11'
-    id_prefix: geburtstag_
-    days_as_soon: 5
-    unit_of_measurement: Tage
-  - name: Maxx
+  - name: Name 1
     date: '1978-03-12'
     id_prefix: geburtstag_
     days_as_soon: 5
     unit_of_measurement: Tage
-  - name: Natascha
-    date: '2000-06-22'
+    icon_normal: mdi:face-man
+  - name: Name 2
+    date: '1979-04-16'
     id_prefix: geburtstag_
     days_as_soon: 5
     unit_of_measurement: Tage
+    icon_normal: mdi:face-woman
+  - name: Name 3
+    date: '2000-7-21'
+    id_prefix: geburtstag_
+    days_as_soon: 5
+    unit_of_measurement: Tage
+    icon_normal: mdi:face-woman-profile
+  - name: Name 4
+    date: '2005-12-12'
+    id_prefix: geburtstag_
+    days_as_soon: 5
+    unit_of_measurement: Tage
+    icon_normal: mdi:face-man-profile
 
 ```
 
