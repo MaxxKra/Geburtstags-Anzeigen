@@ -169,10 +169,10 @@ Attribute:
 ### BEISPIELEINTRÄGE IM KALENDER
 
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Termin_1.png" alt="Example" width="300"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Termin_2.png" alt="Example" width="300"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Termin_1.png" alt="Example" width="350"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Termin_2.png" alt="Example" width="350"/>
 
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Eintrag_Geb_Heute.png" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Eintrag_Geb_Heute.png" alt="Example" width="800"/>
 
 
 <br>
