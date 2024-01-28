@@ -166,6 +166,17 @@ Attribute:
 
 <br>
 
+### BEISPIELEINTRÄGE IM KALENDER
+
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Termin_1.png" alt="Example" width="300"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Termin_2.png" alt="Example" width="300"/>
+
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Eintrag_Geb_Heute.png" alt="Example" width="600"/>
+
+
+<br>
+
 Um diese Werte zu erhalten, ist lediglich das Template in Home Assistant einzutragen. Hier handelt es sich um "Auslöser-basierende-Template-Entitäten", dass bedeutet dieses Template wird durch einen Auslöser aktiviert.
 
 In Falle dieser Templates ist der Auslöser einmal ein Zeitinterval von 15 Minuten und zum Zweiten der Neustart von Home Assistant.
