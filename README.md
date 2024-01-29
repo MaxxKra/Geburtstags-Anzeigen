@@ -16,7 +16,7 @@ Hier sind alle Informationen über Integrationen und Karten welche ich in meinem
 4. [Template Geburtstag Heute](/README.md#four-template-geburtstag-heute)
 5. [Template Gerburtstag Liste](/README.md#five-template-gerburtstag-liste)
 6. [Template Geburtstag Texte](/README.md#six-template-geburtstag-texte)
-7. [Dashboard Karten und Pop-Up Erinnerung](/README.md#six-dashboard-karten-und-pop-up-erinnerung-arrow_down)
+7. [Dashboard Karten und Pop-Up Erinnerung](/README.md#seven-dashboard-karten-und-pop-up-erinnerung-arrow_down)
 
 
 <br>
