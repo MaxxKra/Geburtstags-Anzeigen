@@ -20,7 +20,7 @@ Beispiel:
   
 <br>
 
-Verwendet wurde für diese Karte wieder die `custom:button-card` und diverse Template Sensoren. Als Tap-Action habe ich für mich den Schalter für das Dashboard-Vollbild eingetragen. Dies sollte bei verwndung der Karte abgeändert werden.
+Verwendet wurde für diese Karte wieder die `custom:button-card` und diverse Template Sensoren. Als Tap-Action habe ich für mich den Schalter für das Dashboard-Vollbild eingetragen. Dies sollte bei Verwendung der Karte abgeändert werden.
 
 
 ### CODE TITEL 1 KARTE
