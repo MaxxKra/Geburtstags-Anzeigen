@@ -1,4 +1,4 @@
-# TITEL 1 - KARTE
+# KALENDER - KARTE
 
 
 Die Kalender-Karte ist zur Übersicht aller Geburtstagstermine auf einem Kalender. 
@@ -22,7 +22,7 @@ Beispiel:
 Verwendet wurde für diese Karte die `custom:atomic-calendar-revive` sowie der Geburtstags-Kalender und der Anniversaries-Kalender. 
 
 
-### CODE Kalender KARTE
+### CODE KALENDER KARTE
 
 
 ```yaml
