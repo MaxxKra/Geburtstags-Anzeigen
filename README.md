@@ -570,4 +570,4 @@ sensor:
 ## :six: Dashboard Karten und Pop-Up Erinnerung :arrow_down:
 
 
-[Contribution guidelines for this project](../Karten/GEB-LISTE.md)
+[Contribution guidelines for this project](/Karten/GEB-LISTE.md)
