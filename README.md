@@ -569,5 +569,68 @@ sensor:
 
 ## :six: Dashboard Karten und Pop-Up Erinnerung :arrow_down:
 
+Um eine ansprechende Darstellung am Dashboard zu erhalten, habe ich mehrere Karten erstellt.
+Die Aufteilung dieser Karten am dashboard erfolgt mittels Layout-Card.
 
-[Contribution guidelines for this project](/Karten/GEB-LISTE.md)
+<br>
+
+### Aufteilung Layout-Card
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Layout_Aufteilung_2.png" alt="Example" width="600"/>
+
+
+<br>
+
+Zur Vereinfachung der Codeerstellung für das Layout, habe ich mir in EXCEL einen Codegenerator erstellt. Dieser ist im Ordner Dateien zur Verwendung bereitgestellt.
+
+
+Das verwendete Layout sieht im EXCEL Codegenerator so aus:
+
+<br>
+
+### Aufteilung Layout-Card
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Layout_Aufteilung_3.png" alt="Example" width="600"/>
+
+Die einzelnen Karten werden beim Einfügen am Dashboard in der jeweiligen `area` angezeigt:
+
+<br>
+
+<details>
+
+
+### Der Code für das Layout ist hier zu Kopieren:
+
+<summary>:arrow_down_small: Der Code für das Layout ist hier zu Kopieren: :arrow_down_small:</summary>
+
+```yaml
+grid-template-columns: 6% 20% 6% 17% 17% 2% 30% 2%
+grid-template-rows: auto
+align-items: start
+grid-template-areas: |
+  "head head head head head head head head"   
+  "titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1"   
+  "titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2"   
+  "card1 card1 card1 card2 card2 card8 card3 card9"   
+  "card4 card5 card6 card2 card2 card8 card3 card9"   
+  "card7 card7 card7 card2 card2 card8 card3 card9"   
+
+```
+
+</details>
+
+
+<br>
+
+
+### Um die Beschreibungen der einzelnen Karten zu sehen, folge den Links:
+
+
+<br>
+- [TITEL_1 KARTE](/Karten/TITEL_1.md)
+- [TITEL_2 KARTE](/Karten/TITEL_2.md)
+- [GEBURTSTAG HEUTE KARTE](/Karten/GEB-HEUTE.md)
+- [ENTITY KARTE](/Karten/ENTITY_KARTE.md)
+- [KALENDER KARTE KARTE](/Karten/KALENDER.md)
+- [GEBURTSTAGE LISTE KARTE](/Karten/GEB-LISTE.md)
+- [POPUP KARTE](/Karten/POPUP.md)
