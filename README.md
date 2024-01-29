@@ -586,7 +586,6 @@ Zur Vereinfachung der Codeerstellung für das Layout, habe ich mir in EXCEL eine
 
 Das verwendete Layout sieht im EXCEL Codegenerator so aus:
 
-<br>
 
 ### Aufteilung Layout-Card
 
@@ -627,10 +626,10 @@ grid-template-areas: |
 
 
 <br>
-- [TITEL_1 KARTE](/Karten/TITEL_1.md)
-- [TITEL_2 KARTE](/Karten/TITEL_2.md)
-- [GEBURTSTAG HEUTE KARTE](/Karten/GEB-HEUTE.md)
-- [ENTITY KARTE](/Karten/ENTITY_KARTE.md)
-- [KALENDER KARTE KARTE](/Karten/KALENDER.md)
-- [GEBURTSTAGE LISTE KARTE](/Karten/GEB-LISTE.md)
-- [POPUP KARTE](/Karten/POPUP.md)
+[TITEL_1 KARTE](/Karten/TITEL_1.md)<br>
+[TITEL_2 KARTE](/Karten/TITEL_2.md)<br>
+[GEBURTSTAG HEUTE KARTE](/Karten/GEB-HEUTE.md)<br>
+[ENTITY KARTE](/Karten/ENTITY_KARTE.md)<br>
+[KALENDER KARTE KARTE](/Karten/KALENDER.md)<br>
+[GEBURTSTAGE LISTE KARTE](/Karten/GEB-LISTE.md)<br>
+[POPUP KARTE](/Karten/POPUP.md)
