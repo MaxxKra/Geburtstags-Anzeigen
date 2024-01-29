@@ -6,6 +6,19 @@
 Das Anzeigen von Geburtstagen, ebenso wie Termine oder Ereignise in Home Assistant ist keine Hexerei und es gibt verschiedenste Möglichkeiten diese zu integrieren bzw. anzuzeigen. 
 Hier sind alle Informationen über Integrationen und Karten welche ich in meinem Smarthome dafür verwende.
 
+
+## INHALTSVERZEICHNIS:
+
+
+1. [Verwendete Integrationen](/README.md#one-verwendete-integrationen)
+2. [Anniversaries Integration](/README.md#two-anniversaries-integration)
+3. [Google Kalender Integration](/README.md#three-google-kalender-integration)
+4. [Template Geburtstag Heute](/README.md#four-template-geburtstag-heute)
+5. [Template Gerburtstag Liste](/README.md#five-template-gerburtstag-liste)
+6. [Template Geburtstag Texte](/README.md#six-template-geburtstag-texte)
+7. [Dashboard Karten und Pop-Up Erinnerung](/README.md#six-dashboard-karten-und-pop-up-erinnerung-arrow_down)
+
+
 <br>
 
 Beispiel:
@@ -567,7 +580,7 @@ sensor:
 <br>
 
 
-## :six: Dashboard Karten und Pop-Up Erinnerung :arrow_down:
+## :seven: Dashboard Karten und Pop-Up Erinnerung :arrow_down:
 
 Um eine ansprechende Darstellung am Dashboard zu erhalten, habe ich mehrere Karten erstellt.
 Die Aufteilung dieser Karten am dashboard erfolgt mittels Layout-Card.
