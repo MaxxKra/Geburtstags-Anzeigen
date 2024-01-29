@@ -626,6 +626,7 @@ grid-template-areas: |
 
 
 <br>
+
 [TITEL_1 KARTE](/Karten/TITEL_1.md)<br>
 [TITEL_2 KARTE](/Karten/TITEL_2.md)<br>
 [GEBURTSTAG HEUTE KARTE](/Karten/GEB-HEUTE.md)<br>
@@ -633,3 +634,4 @@ grid-template-areas: |
 [KALENDER KARTE KARTE](/Karten/KALENDER.md)<br>
 [GEBURTSTAGE LISTE KARTE](/Karten/GEB-LISTE.md)<br>
 [POPUP KARTE](/Karten/POPUP.md)
+
