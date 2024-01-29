@@ -421,5 +421,10 @@ sensor:
 <br>
 
 
-## :six: Dshboard Karten :arrow_down:
+## :six: Template Geburtstag Texte 
+
+<br>
+
+
+## :six: Dashboard Karten und Pop-Up Erinnerung :arrow_down:
 
