@@ -27,10 +27,10 @@
 sensor:
 
 #-----------------------------------------------------------
-# Wer hat heute Geburtstag | NAME
+# Wer hat heute Geburtstag Einzeln | NAME
 #-----------------------------------------------------------
-- name: Geburtstags Termine
-  unique_id: geburtstags_termine
+- name: Geburtstags Termine Einzeln
+  unique_id: geburtstags_termine_einzeln
   icon: mdi:calendar-month-outline
   state: >
     {% set KAL = states.calendar.geburtstag.state %}
@@ -44,26 +44,31 @@ sensor:
     {%- endif %}    
 
 #-----------------------------------------------------------
-# Berechnung des Alters wenn Geburtsjahr als Notiz vorhanen
+# Berechnung des Alters wenn Geburtsjahr als Notiz  Einzeln
 #-----------------------------------------------------------
-- name: Geburtstags Alter
-  unique_id: geburtstags_alter
+- name: Geburtstags Alter Einzeln
+  unique_id: geburtstags_alter_einzeln
   icon: mdi:numeric-9-plus-circle-outline
   state: >
-    {%- set GEBJAHR = states['calendar.geburtstag'].attributes.description %}
-    {%- set HEUTE = now().year %}
-    {%-if GEBJAHR != "" %}
-    {%- set ALTER = HEUTE - GEBJAHR | int %}
-    {{ ALTER }}
+    {%- set KAL = states.calendar.geburtstag.state %}
+    {%- set NOTIZ = states['calendar.geburtstag'].attributes.description %}
+    {%- set HEUTE = now().year %}    
+    {%- if KAL == 'on' and NOTIZ != "" %}
+      {%- set ALTER = NOTIZ | regex_findall('(\d{4})') | first %}
+      {%- if ALTER is defined %}
+        {{ HEUTE - ALTER | int }}
+      {%- else %}
+        ??
+      {%- endif %}
     {%- else %}
-    UNBEKANNT
-    {%-endif%}
+      ??
+    {%- endif %}
 
 #-----------------------------------------------------------
-# Geburtstag Heute | NAME + ALTER als Attribut
+# Geburtstag Heute Einzeln| NAME + ALTER als Attribut
 #-----------------------------------------------------------
-- name: Geburtstag Heute
-  unique_id: geburtstag_heute
+- name: Geburtstag Heute Einzeln
+  unique_id: geburtstag_heute_einzeln
   icon: mdi:calendar-month-outline
   state: >
     {% set KAL = states.calendar.geburtstag.state %}
@@ -88,37 +93,40 @@ sensor:
       {%- endif %}
 
 #-----------------------------------------------------------
-# Text Geburtstag Allgemein
+# Textzeile Geburtstag zusammengestellt (Sprachausgabe)
 #-----------------------------------------------------------
-- name: Geburtstags Text
-  unique_id: geburtstags_text
+- name: Geburtstags Text Zeile
+  unique_id: geburtstags_text_zeile
   icon: mdi:calendar-month-outline
   state: >
-    {% set KAL = states.calendar.geburtstag.state %}
-    {% set NAME = states.calendar.geburtstag.attributes.message%}
-    {% set ALTER = states.sensor.geburtstags_alter.state %}
-    {%- if KAL == 'off' %}
+    {%- set GEBLISTE = state_attr('sensor.geburtstag_heute','scheduled_events') %}
+    {%- if GEBLISTE is defined and GEBLISTE|length == 1 %}
+    {%- for E in GEBLISTE %}
+    {{ E.Name }} hat heute Geburtstag und wird {{ E.Alter }} Jahre alt!
+    {%- endfor %}
+    {%- elif GEBLISTE is defined and GEBLISTE|length > 1 %}
+    {%- for E in GEBLISTE %}
+    {{ E.Name }}, Alter {{ E.Alter }} Jahre
+      {%- if not loop.last %} und {%- endif %}
+      {%- if loop.last %} haben heute Geburtstag!{%- endif %}
+    {%- endfor %}
+    {%- else %}
     Heute hat niemand Geburtstag!
-    {%- elif KAL == 'on' %}
-    Heute hat {{ NAME }} Geburtstag und wird {{ ALTER }} Jahre alt!
-    {% else %}
-    FEHLER
-    {%- endif %}    
+    {%- endif %}  
 
 #-----------------------------------------------------------
-# Text Geburtstag für das Dashboard
+# Textliste Geburtstag für das Dashboard
 #-----------------------------------------------------------
 - name: Geburtstags Text Dashboard
   unique_id: geburtstags_text_dashboard
   icon: mdi:calendar-month-outline
   state: >
-    {% set KAL = states.calendar.geburtstag.state %}
-    {% set NAME = states.calendar.geburtstag.attributes.message%}
-    {% set ALTER = states.sensor.geburtstags_alter.state %}
-    {%- if KAL == 'off' %}
-    Niemand!
-    {%- elif KAL == 'on' %}
-    {{ NAME }} | LEVEL: {{ ALTER }}
-    {% else %}
-    FEHLER
-    {%- endif %} 
+    {%- set TERMINE = states.sensor.geburtstag_heute.state %}
+    {%- set GEBLISTE = state_attr('sensor.geburtstag_heute','scheduled_events') %}
+    {%- if GEBLISTE is defined and GEBLISTE|length > 0%}
+    {%- for E in GEBLISTE %}
+    {{ E.Name }} | Alter: {{ E.Alter }}{%- if not loop.last %};{%- endif %}
+    {%- endfor %}
+    {%- else %}
+    Heute keine Geburtstage!
+    {%- endif %}
