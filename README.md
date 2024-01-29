@@ -423,6 +423,147 @@ sensor:
 
 ## :six: Template Geburtstag Texte 
 
+
+Zur Darstellung auf dem Dashboard bzw. zur Definition von Texten für den Sprachassistenten habe ich zusätzliche Templates als **Geburtstags Texte** angelegt.
+
+
+Diese Templates sind:
+
+
+- **Geburtstags Termine Einzeln** (Zeigt den Namen des ersten Eintrags am jeweiligen Tag als Zustand an)
+- **Geburtstags Alter Einzeln** (Zeigt das Alter des ersten Eintrags am jeweiligen Tag als Zustand an)
+- **Geburtstag Heute Einzeln** (Zeigt den Namen des Ersten Eintrags als Zustand, sowie das Alter als Attribut an)
+- **Geburtstags Text Zeile** (Stellt eine Textzeile aus Namen und Alter der Geburtstage am jeweiligen Tag zusammen)
+- **Geburtstags Text Dashboard** (Stellt eine Liste der Namen und Alter der Geburtstage mit Sepertor zusammen)
+
+
+> Bei allen Tempaltes gilt, dass das Alter nur angezeigt bzw. berechnet wird, wenn im Kalender bei Notiz eine Jahreszahl eingetragen wurde.
+
+<br>
+
+<details>
+
+
+### Templates Geburtstag Texte
+
+<summary>:arrow_down_small: Templates Geburtstag Texte :arrow_down_small:</summary>
+
+```yaml
+#-----------------------------------------------------------
+# Geburtstags Kalender
+#-----------------------------------------------------------
+
+sensor:
+
+#-----------------------------------------------------------
+# Wer hat heute Geburtstag Einzeln | NAME
+#-----------------------------------------------------------
+- name: Geburtstags Termine Einzeln
+  unique_id: geburtstags_termine_einzeln
+  icon: mdi:calendar-month-outline
+  state: >
+    {% set KAL = states.calendar.geburtstag.state %}
+    {% set NAME = states.calendar.geburtstag.attributes.message%}
+    {%- if KAL == 'off' %}
+    Heute keine Termine!
+    {%- elif KAL == 'on' %}
+    {{ NAME }}
+    {% else %}
+    FEHLER
+    {%- endif %}    
+
+#-----------------------------------------------------------
+# Berechnung des Alters wenn Geburtsjahr als Notiz  Einzeln
+#-----------------------------------------------------------
+- name: Geburtstags Alter Einzeln
+  unique_id: geburtstags_alter_einzeln
+  icon: mdi:numeric-9-plus-circle-outline
+  state: >
+    {%- set KAL = states.calendar.geburtstag.state %}
+    {%- set NOTIZ = states['calendar.geburtstag'].attributes.description %}
+    {%- set HEUTE = now().year %}    
+    {%- if KAL == 'on' and NOTIZ != "" %}
+      {%- set ALTER = NOTIZ | regex_findall('(\d{4})') | first %}
+      {%- if ALTER is defined %}
+        {{ HEUTE - ALTER | int }}
+      {%- else %}
+        ??
+      {%- endif %}
+    {%- else %}
+      ??
+    {%- endif %}
+
+#-----------------------------------------------------------
+# Geburtstag Heute Einzeln| NAME + ALTER als Attribut
+#-----------------------------------------------------------
+- name: Geburtstag Heute Einzeln
+  unique_id: geburtstag_heute_einzeln
+  icon: mdi:calendar-month-outline
+  state: >
+    {% set KAL = states.calendar.geburtstag.state %}
+    {% set NAME = states.calendar.geburtstag.attributes.message%}
+    {%- if KAL == 'off' %}
+    Niemand
+    {%- elif KAL == 'on' %}
+    {{ NAME }}
+    {% else %}
+    FEHLER
+    {%- endif %}
+  attributes:
+    Alter: >
+      {% set KAL = states.calendar.geburtstag.state %}
+      {% set ALTER = states.sensor.geburtstags_alter.state %}
+      {%- if KAL == 'off' %}
+      UNBEKANNT
+      {%- elif KAL == 'on' %}
+      {{ ALTER }}
+      {% else %}
+      FEHLER
+      {%- endif %}
+
+#-----------------------------------------------------------
+# Textzeile Geburtstag zusammengestellt (Sprachausgabe)
+#-----------------------------------------------------------
+- name: Geburtstags Text Zeile
+  unique_id: geburtstags_text_zeile
+  icon: mdi:calendar-month-outline
+  state: >
+    {%- set GEBLISTE = state_attr('sensor.geburtstag_heute','scheduled_events') %}
+    {%- if GEBLISTE is defined and GEBLISTE|length == 1 %}
+    {%- for E in GEBLISTE %}
+    {{ E.Name }} hat heute Geburtstag und wird {{ E.Alter }} Jahre alt!
+    {%- endfor %}
+    {%- elif GEBLISTE is defined and GEBLISTE|length > 1 %}
+    {%- for E in GEBLISTE %}
+    {{ E.Name }}, Alter {{ E.Alter }} Jahre
+      {%- if not loop.last %} und {%- endif %}
+      {%- if loop.last %} haben heute Geburtstag!{%- endif %}
+    {%- endfor %}
+    {%- else %}
+    Heute hat niemand Geburtstag!
+    {%- endif %}  
+
+#-----------------------------------------------------------
+# Textliste Geburtstag für das Dashboard
+#-----------------------------------------------------------
+- name: Geburtstags Text Dashboard
+  unique_id: geburtstags_text_dashboard
+  icon: mdi:calendar-month-outline
+  state: >
+    {%- set TERMINE = states.sensor.geburtstag_heute.state %}
+    {%- set GEBLISTE = state_attr('sensor.geburtstag_heute','scheduled_events') %}
+    {%- if GEBLISTE is defined and GEBLISTE|length > 0%}
+    {%- for E in GEBLISTE %}
+    {{ E.Name }} | Alter: {{ E.Alter }}{%- if not loop.last %};{%- endif %}
+    {%- endfor %}
+    {%- else %}
+    Heute keine Geburtstage!
+    {%- endif %}
+
+```
+
+</details>
+
 <br>
 
 
