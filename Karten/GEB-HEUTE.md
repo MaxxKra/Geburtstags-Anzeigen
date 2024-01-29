@@ -19,7 +19,7 @@ Beispiel:
   
 <br>
 
-Verwendet wurde für diese Karte die `custom:button-card` sowie der Geburtstags-Kalender und der Template Sensor `sensor.geburtstags_text_dashboard`. Das verwendete Icon ist hier zum Download bzw. Kopieren. Nicht vergessen im Code der Karte den Speicherpfad des Bildes anzupassen!
+Verwendet wurde für diese Karte die `custom:button-card` sowie der Geburtstags-Kalender und der Template Sensor `sensor.geburtstags_text_dashboard`. Das verwendete Icon ist im Ordner Dateien zum Download bzw. Kopieren. Nicht vergessen im Code der Karte den Speicherpfad des Bildes anzupassen!
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/button_re_birthday.png" alt="Example" width="300"/>
 
