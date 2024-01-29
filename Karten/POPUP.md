@@ -3,7 +3,7 @@
 
 Um am Dashboard zu einem bestimmten Zeitpunkt über einen aktuellen Geburtstag informiert zu werden, habe ich ein PopUp erstellt.
 
-Dieses PopUp wird mittels Zeitplan (kann aber auch jeder andere Auslöser sein) aktiviert, und zeigt den Namen und das Alter auf einer Torte.
+Dieses PopUp wird mittels Zeitplan (kann aber auch jeder andere Auslöser sein) aktiviert, und zeigt den Namen und das Alter auf einer Torte. Zu erwähnen ist, wenn an einem Tag 2 Termine anstehen, nur der erste auf dem PopUp angezeigt wird.
 
 <br>
 
@@ -17,8 +17,8 @@ Benutz habe ich dazu:
 - input_button.button_geburtstag (Helfer Taste)
 - input_button.geburtstag_gelesen (Helfer Taste)
 - custom:button-card (HACS Frontend Integration)
-- sensor.geburtstags_termine (Angelegter Template Sensor)
-- sensor.geburtstags_alter (Angelegter Template Sensor)
+- sensor.geburtstags_termine_einzeln (Angelegter Template Sensor)
+- sensor.geburtstags_alter_einzeln (Angelegter Template Sensor)
 - Bild der Torte
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Torte.png" alt="Example" width="200"/>
 
@@ -45,7 +45,7 @@ card:
   image: /local/images/birthday/Torte.png
   elements:
     - type: custom:button-card
-      entity: sensor.geburtstags_termine
+      entity: sensor.geburtstags_termine_einzeln
       show_state: true
       show_icon: false
       show_name: false
@@ -65,7 +65,7 @@ card:
         left: 50%
         width: 70%
     - type: custom:button-card
-      entity: sensor.geburtstags_alter
+      entity: sensor.geburtstags_alter_einzeln
       show_state: true
       show_icon: false
       show_name: false
@@ -112,4 +112,5 @@ card_mod:
       .content {
         border: 4px solid purple !important;
       }
+
 ```

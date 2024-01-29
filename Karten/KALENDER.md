@@ -1,3 +1,31 @@
+# TITEL 1 - KARTE
+
+
+Die Kalender-Karte ist zur Übersicht aller Geburtstagstermine auf einem Kalender. 
+
+<br>
+
+Beispiel:
+![Beispiel](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Karte_Kalender.png)
+  
+<br>
+
+Positioniert ist diese Karte am Dashboard, welches mit der Layout-Card erstellt wurde, auf `area: card2`.
+
+<br>
+
+Beispiel:
+![Beispiel](https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Dashboard_Layout_Aufteilung.png)
+  
+<br>
+
+Verwendet wurde für diese Karte die `custom:atomic-calendar-revive` sowie der Geburtstags-Kalender und der Anniversaries-Kalender. 
+
+
+### CODE Kalender KARTE
+
+
+```yaml
 type: custom:atomic-calendar-revive
 name: Unsere Kalender
 enableModeChange: true
@@ -95,3 +123,4 @@ card_mod:
       font-size: 1.2vw !important; !important;
       height: 3vw !important;
     }
+```
