@@ -52,7 +52,7 @@ Beispiel:
 | Secondary Info | HACS | https://github.com/custom-cards/secondaryinfo-entity-row.git |
 | Atomic Calendar Revive | HACS | https://github.com/totaldebug/atomic-calendar-revive.git |
 | Layout Card | HCS |  https://github.com/thomasloven/lovelace-layout-card.git |
-| Markdown Card | Lovelace | Home Assistant Standard Karte |
+| Entities Card | Lovelace | Home Assistant Standard Karte |
 | Expander Card | HACS | https://github.com/Alia5/lovelace-expander-card.git |
 
 
@@ -72,7 +72,7 @@ Wie ich meine Termine angelegt habe, kannst du dir anhand der folgenden Beschrei
 
 ### Termine über das UI
 
-Termine sind bei dieser Integration über das UI als das Userinterface in Home Assistant unter Geräte&Dienste ganz leicht hinzuzufügen. Eine Schritt für Schritt - Anleitung kannst du dir im Dropdownmennü ansehen.
+Termine sind bei dieser Integration über das UI, also das Userinterface, in Home Assistant unter Geräte&Dienste ganz leicht hinzuzufügen. Eine Schritt für Schritt - Anleitung kannst du dir im Dropdownmennü ansehen.
 <details>
 
 <summary>:arrow_down_small: Termine erstellen über das UI :arrow_down_small:</summary>
