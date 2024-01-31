@@ -27,27 +27,38 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 
 <summary>:arrow_down_small: HELFER IM DETAIL :arrow_down_small:</summary>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Zeitplan.png" alt="Example" width="800"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Zeitplan.png" alt="Example" width="600"/>
+
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Mullerinnerung.png" alt="Example" width="800"/>
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Mullerinnerung.png" alt="Example" width="600"/>
+
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Mullerinnerung_gelesen.png" alt="Example" width="800"/>
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Mullerinnerung_gelesen.png" alt="Example" width="600"/>
+
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Geburtstag.png" alt="Example" width="800"/>
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Geburtstag.png" alt="Example" width="600"/>
+
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Geburtstag_gelesen.png" alt="Example" width="800"/>
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Geburtstag_gelesen.png" alt="Example" width="600"/>
+
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Schalter_PopUp.png" alt="Example" width="800"/>
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Schalter_PopUp.png" alt="Example" width="600"/>
+
 
 <br>
 
