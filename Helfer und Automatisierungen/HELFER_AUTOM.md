@@ -180,7 +180,7 @@ condition:
         entity_id: input_boolean.schalter_popup
         state: "off"
       - condition: template
-        value_template: "{{ states.sensor.geburtstag_heute.state != 'Niemand' }}"
+        value_template: "{{ states.sensor.geburtstag_heute_einzeln.state != 'Niemand' }}"
 action:
   - delay:
       hours: 0
