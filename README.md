@@ -146,6 +146,10 @@ Die Integration des Google Kalenders ist zwar etwas aufwendiger aber auch für N
 Hier kommst du zur offiziellen Dokumentation der Google Integration: [GOOGLE INTEGRATION](https://www.home-assistant.io/integrations/google)
 
 
+> [!WICHTIG]
+> Der Standardmäßig angelegte Google Kalender, sprich der Geburtstagskalender, übernimmt die Namen automatisch aus der Kontaktliste und lässt daher kein Hinzufügen manueller Termine und dadurch auch kein Eintragen von Notizen bzw. Beschreibungen zu. Da dies aber zur Berechnung des Alters dringend notwendig ist, habe ich den Standardkalender gelöscht und einen neuen mit dem Namen Geburtstag hinzugefügt.
+
+
 Um im späteren Verlauf das Alter mittels Termin-Eintrag zu berechnen, habe ich das Geburtsjahr als Notiz dem Termin beigefügt. In Home Assistant wird diese Notiz als Attribut `description:` angezeigt. Mit dem von mir erstellten Template, ist es auch kein Problem, wenn zusätzlich zu der 4 Stelligen Jahreszahl noch ein Text als Hinweis oder dergleichen in der Termin-Notiz eingetragen wird.
 
 
