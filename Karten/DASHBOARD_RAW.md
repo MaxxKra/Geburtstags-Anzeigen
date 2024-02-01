@@ -18,7 +18,6 @@ kiosk_mode:
 views:
   - title: Geburtstag
     path: geburtstag
-    animated_background: aqua
     icon: mdi:cake-layered
     theme: Caule Black Green Glass
     type: custom:grid-layout
