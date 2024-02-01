@@ -39,11 +39,16 @@ show_entity_picture: true
 entity_picture: /local/lovelace/icon/button_re_birthday.png
 label: Geburtstag heute
 name: |
-  [[[ 
-      return `
-      <span style='color: var(--primary-color);'>
-      ${states['sensor.geburtstags_text_dashboard'].state}&nbsp
-      </span>`
+  [[[
+      const text = states['sensor.geburtstags_text_dashboard'].state;
+      
+      if (text && text.includes(';')) {
+          const lines = text.split(';').map(line => line.trim());
+          const formattedText = lines.join('<br>');
+          return `<span style='color: var(--primary-color);'>${formattedText}&nbsp;</span>`;
+      } else {
+          return `<span style='color: var(--primary-color);'>${text}&nbsp;</span>`;
+      }
   ]]]
 styles:
   card:
