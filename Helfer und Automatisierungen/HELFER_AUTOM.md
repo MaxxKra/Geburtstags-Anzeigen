@@ -13,9 +13,8 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 
 - HELFER ZEITPLAN:    schedule.zeitplan_popup
 - HELFER BUTTON:    input_button.button_mullerinnerung
-- HELFER BUTTON:    input_button.mullerinnerung_gelesen
 - HELFER BUTTON:    input_button.button_geburtstag
-- HELFER BUTTON:    input_button.geburtstag_gelesen
+- HELFER BUTTON:    input_button.popup_gelesen
 - HELFER SWITCH:    input_boolean.schalter_popup
 
 
@@ -34,12 +33,6 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 
 
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Mullerinnerung.png" alt="Example" width="600"/>
-
-
-<br>
-
-
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Mullerinnerung_gelesen.png" alt="Example" width="600"/>
 
 
 <br>
@@ -73,11 +66,17 @@ Dies sind die Automatisierungen zu den Popups:
 
 
 - Popup Müllerinnerung
-- Button Müllerinnerung
-- PopUp Müllerinnerung gelesen
 - Popup Geburtstag
-- Button Geburtstag
-- PopUp Geburtstag gelesen
+- PopUp gelesen
+
+
+Um die Einrichtung der Automatisierungen für euch einfacher zu gestallten, habe ich für jede ein `blueprint` erstellt.
+Die Import-Adressen dieser Blaupausen sind hier angeführt:
+
+
+- Erstes Popup öffnen: https://gist.github.com/MaxxKra/31fabed40e1268e7f2022b1d65a32f8e
+- Zweites Popup öffnen: https://gist.github.com/MaxxKra/05a6d4be4ada235db17ee46914b3b1a2
+- Popup schließen: https://gist.github.com/MaxxKra/f68028e0c6f486015aede877a8b166ad
 
 
 
