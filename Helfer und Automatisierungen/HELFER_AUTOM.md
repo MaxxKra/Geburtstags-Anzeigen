@@ -74,9 +74,9 @@ Um die Einrichtung der Automatisierungen für euch einfacher zu gestallten, habe
 Die Import-Adressen dieser Blaupausen sind hier angeführt:
 
 
-- Erstes Popup öffnen: https://gist.github.com/MaxxKra/31fabed40e1268e7f2022b1d65a32f8e
-- Zweites Popup öffnen: https://gist.github.com/MaxxKra/05a6d4be4ada235db17ee46914b3b1a2
-- Popup schließen: https://gist.github.com/MaxxKra/f68028e0c6f486015aede877a8b166ad
+- Öffne das erste Pop-Up: https://gist.github.com/MaxxKra/835b3380ed912c0e66d81941636eedcc
+- Öffne das zweite Pop-Up: https://gist.github.com/MaxxKra/f6cc2e344abfe43221631304bb93d9e2
+- Schließe die Pop-Ups: https://gist.github.com/MaxxKra/7979490bd78565943564156999f4f299
 
 
 
