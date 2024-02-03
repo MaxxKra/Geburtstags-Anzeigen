@@ -64,13 +64,6 @@ Ich habe folgende Helfer für mein Geburtstags-PopUp erstellt:
 ### HELFER INPUT-BUTTON - POPUP GELESEN
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_gelesen.png" alt="Example" width="600"/>
 
-<br>
-<br>
-
-### HELFER INPUT-BOOLEAN - SCHALTER POPUP
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Schalter_PopUp.png" alt="Example" width="600"/>
-
-
 </details>
 <br>
 
