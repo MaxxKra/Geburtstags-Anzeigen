@@ -32,12 +32,12 @@ Da ich mit einem Zeitplan, zwei Popups öffne aber immer nur eines angezeigt wer
 ## HELFER
 
 <br>
-<br>
+
 
 Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp erstellt:
 
 <br>
-<br>
+
 
 - HELFER ZEITPLAN:    schedule.zeitplan_popup
 - HELFER BUTTON:    input_button.button_mullerinnerung
@@ -82,12 +82,12 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 ## AUTOMATISIERUNGEN
 
 <br>
-<br>
+
 
 Dies sind die Automatisierungen zu den Popups:
 
 <br>
-<br>
+
 
 - Popup Müllerinnerung
 - Popup Geburtstag
@@ -100,24 +100,26 @@ Um die Einrichtung der Automatisierungen für euch einfacher zu gestallten, habe
 Die Import-Adressen dieser Blaupausen sind hier angeführt:
 
 <br>
-<br>
+
 
 - Öffne das erste Pop-Up: https://gist.github.com/MaxxKra/835b3380ed912c0e66d81941636eedcc
 - Öffne das zweite Pop-Up: https://gist.github.com/MaxxKra/f6cc2e344abfe43221631304bb93d9e2
 - Schließe die Pop-Ups: https://gist.github.com/MaxxKra/7979490bd78565943564156999f4f299
 
+<br>
+<br>
 
 Um diese Blaupausen einzufügen, gehe auf `EINSTELLUNGEN` / `AUTOMATISIERUNGEN & SZENEN` / `BLAUPAUSEN` und wähle rechts unten `BLAUPAUSE IMPORTIEREN`.
 
 <br>
-<br>
+
 
 Kopiere dir die Adressen der Blaupausen und füge diese ein. Danach wähle `VORSCHAU` und dann `BLAUPAUSE IMPORTIEREN`.
 Nun ist die Blaupause installiert und kann ausgewählt und mit Daten gefüllt werden.
 
 <br>
 <br>
-<br>
+
 
 > NICHT VERGESSEN ALLE SENSOR-DATEN, ENTITÄTEN UND DIE BROWSER_ID ANZUPASSEN!
 
