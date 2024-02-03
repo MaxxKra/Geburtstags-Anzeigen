@@ -2,6 +2,26 @@
 
 
 Um das Pop-Up automatisiert zu öffnen, sind Helfer und Automatisierungen notwendig.
+Diese habe ich hier für 1 oder 2 Pop-Up vorbereitet
+
+
+# HELFER UND AUTOMATISIERUNGEN FÜR EIN POP-UP
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/PopUp_einzeln.gif" alt="Example" width="600"/>
+
+
+# HELFER UND AUTOMATISIERUNGEN FÜR ZWEI POP-UPS
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/PopUp_mehrere.gif" alt="Example" width="600"/>
+
+
+## Die Details findest du im Dropdown Menü:
+<br>
+<details>
+
+<summary>:arrow_down_small: DETAILS ZWEI POPUPS :arrow_down_small:</summary>
+
+
 Da ich mit einem Zeitplan, zwei Popups öffne aber immer nur eines angezeigt werden kann, habe ich meine Pop-Ups mit einem `GELESEN-BUTTON` versehen und die Automatisierungen so angepasst, dass das zweite Pop-Up erst geöffnet wird, wenn das erste gelesen wurde.
 
 
@@ -19,44 +39,34 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 
 
 
-### HELFER IM DETAIL
-
-<br>
-<details>
-
-<summary>:arrow_down_small: HELFER IM DETAIL :arrow_down_small:</summary>
-
+### HELFER SCHEDULE - ZEITPLAN POPUP
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Zeitplan.png" alt="Example" width="600"/>
 
 
 <br>
 
-
+### HELFER INPUT-BUTTON - MÜLLERINNERUNG
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Mullerinnerung.png" alt="Example" width="600"/>
 
 
 <br>
 
-
+### HELFER INPUT-BUTTON - GEBURTSTAG
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Geburtstag.png" alt="Example" width="600"/>
 
 
 <br>
 
-
+### HELFER INPUT-BUTTON - GELESEN
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Geburtstag_gelesen.png" alt="Example" width="600"/>
 
 
 <br>
 
-
+### HELFER INPUT-BOOLEAN - SCHALTER POPUP
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Schalter_PopUp.png" alt="Example" width="600"/>
 
 
-<br>
-
-
-</details>
 <br>
 
 
@@ -79,160 +89,21 @@ Die Import-Adressen dieser Blaupausen sind hier angeführt:
 - Schließe die Pop-Ups: https://gist.github.com/MaxxKra/7979490bd78565943564156999f4f299
 
 
-
-### AUTOMATISIERUNGEN IM DETAIL
-
-<br>
-<details>
-
-<summary>:arrow_down_small: AUTOMATISIERUNGEN IM DETAIL :arrow_down_small:</summary>
-
-```yaml
-alias: Popup Müllerinnerung
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - schedule.zeitplan_popup
-    from: "off"
-    to: "on"
-condition:
-  - condition: template
-    value_template: "{{ states.sensor.mullabholung_heute.state != 'Keine' }}"
-action:
-  - service: input_button.press
-    data: {}
-    target:
-      entity_id: input_button.button_mullerinnerung
-mode: single
-```
-
-<br>
-
-```yaml
-alias: Button Müllerinnerung
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - input_button.button_mullerinnerung
-condition: []
-action:
-  - service: browser_mod.more_info
-    data:
-      entity: input_button.button_mullerinnerung
-      large: false
-      ignore_popup_card: false
-      browser_id: SHB-PC_Vivaldi
-  - service: input_boolean.turn_on
-    target:
-      entity_id: input_boolean.schalter_popup
-    data: {}
-mode: single
-```
-
-<br>
-
-```yaml
-alias: PopUp Müllerinnerung gelesen
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - input_button.mullerinnerung_gelesen
-condition: []
-action:
-  - service: browser_mod.close_popup
-    data:
-      browser_id: SHB-PC_Vivaldi
-  - service: input_boolean.turn_off
-    target:
-      entity_id: input_boolean.schalter_popup
-    data: {}
-mode: single
-```
-
-<br>
-
-```yaml
-alias: Popup Geburtstag
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - schedule.zeitplan_popup
-    from: "off"
-    to: "on"
-    for:
-      hours: 0
-      minutes: 0
-      seconds: 5
-  - platform: state
-    entity_id:
-      - input_boolean.schalter_popup
-    from: "on"
-    to: "off"
-condition:
-  - condition: and
-    conditions:
-      - condition: state
-        entity_id: input_boolean.schalter_popup
-        state: "off"
-      - condition: template
-        value_template: "{{ states.sensor.geburtstag_heute_einzeln.state != 'Niemand' }}"
-action:
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 1
-      milliseconds: 0
-  - service: input_button.press
-    data: {}
-    target:
-      entity_id: input_button.button_geburtstag
-mode: single
-```
-
-<br>
-
-```yaml
-alias: Button Geburtstag
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - input_button.button_geburtstag
-condition: []
-action:
-  - service: browser_mod.more_info
-    data:
-      entity: input_button.button_geburtstag
-      large: false
-      ignore_popup_card: false
-      browser_id: SHB-PC_Vivaldi
-mode: single
-```
-
-<br>
-
-```yaml
-alias: Popup Geburtstag gelesen
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - input_button.geburtstag_gelesen
-condition: []
-action:
-  - service: browser_mod.close_popup
-    data:
-      browser_id: SHB-PC_Vivaldi
-mode: single
-```
+Um diese Blaupausen einzufügen, gehe auf `EINSTELLUNGEN` / `AUTOMATISIERUNGEN & SZENEN` / `BLAUPAUSEN` und wähle rechts unten `BLAUPAUSE IMPORTIEREN`.
 
 
-</details>
+Kopiere dir die Adressen der Blaupausen und füge diese ein. Danach wähle `VORSCHAU` und dann `BLAUPAUSE IMPORTIEREN`.
+Nun ist die Blaupause installiert und kann ausgewählt und mit Daten gefüllt werden.
+
+
 <br>
 
 
 > NICHT VERGESSEN ALLE SENSOR-DATEN, ENTITÄTEN UND DIE BROWSER_ID ANZUPASSEN!
+
+
+<br>
+
+
+</details>
+<br>
