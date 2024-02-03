@@ -73,9 +73,7 @@ Ich habe folgende Helfer für mein Geburtstags-PopUp erstellt:
 
 </details>
 <br>
-<br>
-<br>
-<br>
+
 
 ## AUTOMATISIERUNGEN
 
@@ -155,6 +153,14 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 <br>
 <br>
 
+
+### DIE HELFER IM DETAIL:
+<br>
+<details>
+
+<summary>:arrow_down_small: DIE HELFER IM DETAIL :arrow_down_small:</summary>
+
+
 ### HELFER SCHEDULE - ZEITPLAN POPUP
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Zeitplan.png" alt="Example" width="600"/>
 
@@ -182,9 +188,10 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 ### HELFER INPUT-BOOLEAN - SCHALTER POPUP
 <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Schalter_PopUp.png" alt="Example" width="600"/>
 
+
+</details>
 <br>
-<br>
-<br>
+
 
 ## AUTOMATISIERUNGEN
 
