@@ -62,7 +62,7 @@ Ich habe folgende Helfer für mein Geburtstags-PopUp erstellt:
 <br>
 
 ### HELFER INPUT-BUTTON - POPUP GELESEN
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Geburtstag_gelesen.png" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_gelesen.png" alt="Example" width="600"/>
 
 <br>
 <br>
@@ -180,7 +180,7 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 <br>
 
 ### HELFER INPUT-BUTTON - POPUP GELESEN
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Geburtstag_gelesen.png" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_gelesen.png" alt="Example" width="600"/>
 
 <br>
 <br>
