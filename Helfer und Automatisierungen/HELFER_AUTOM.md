@@ -27,7 +27,7 @@ Diese habe ich hier für 1 oder 2 Pop-Up vorbereitet
 Da ich mit einem Zeitplan, zwei Popups öffne aber immer nur eines angezeigt werden kann, habe ich meine Pop-Ups mit einem `GELESEN-BUTTON` versehen und die Automatisierungen so angepasst, dass das zweite Pop-Up erst geöffnet wird, wenn das erste gelesen wurde.
 
 <br>
-<br>
+
 
 ## HELFER
 
@@ -38,12 +38,13 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 
 <br>
 
-
-- HELFER ZEITPLAN:    schedule.zeitplan_popup
-- HELFER BUTTON:    input_button.button_mullerinnerung
-- HELFER BUTTON:    input_button.button_geburtstag
-- HELFER BUTTON:    input_button.popup_gelesen
-- HELFER SWITCH:    input_boolean.schalter_popup
+| **HELFER** | **NAME** | **ENTITY ID** | **ICON** |
+| --- | --- | --- | --- |
+| ZEITPLAN | Zeitplan PopUp | schedule.zeitplan_popup | mdi:calendar-clock-outline |
+| TASTE | Müllerinnerung | input_button.mullerinnerung | mdi:delete-circle-outline |
+| TASTE | Geburtstag | input_button.geburtstag | mdi:cake-variant-outline |
+| TASTE | PopUp gelesen | input_button.popup_gelesen | mdi:close-box |
+| SCHALTER | Schalter PopUp | input_boolean.schalter_popup | mdi:block-helper |
 
 <br>
 <br>
@@ -84,27 +85,19 @@ Ich habe folgende Helfer für mein Müllerinnerungs-PopUp und Geburtstags-PopUp 
 <br>
 
 
+Um die Einrichtung der Automatisierungen für euch einfacher zu gestallten, habe ich für jede ein `blueprint` erstellt.
+Die Import-Adressen dieser Blaupausen sind hier angeführt:<br>
+
 Dies sind die Automatisierungen zu den Popups:
 
 <br>
 
 
-- Popup Müllerinnerung
-- Popup Geburtstag
-- PopUp gelesen
-
-<br>
-<br>
-
-Um die Einrichtung der Automatisierungen für euch einfacher zu gestallten, habe ich für jede ein `blueprint` erstellt.
-Die Import-Adressen dieser Blaupausen sind hier angeführt:
-
-<br>
-
-
-- Öffne das erste Pop-Up: https://gist.github.com/MaxxKra/835b3380ed912c0e66d81941636eedcc
-- Öffne das zweite Pop-Up: https://gist.github.com/MaxxKra/f6cc2e344abfe43221631304bb93d9e2
-- Schließe die Pop-Ups: https://gist.github.com/MaxxKra/7979490bd78565943564156999f4f299
+| **AUTOMATISIERUNG** | **NAME** | **BLAUPAUSE** |
+| --- | --- | --- |
+| Öffne das erste Pop-Up | Popup Müllerinnerung | https://gist.github.com/MaxxKra/835b3380ed912c0e66d81941636eedcc |
+| Öffne das zweite Pop-Up | Popup Geburtstag | https://gist.github.com/MaxxKra/f6cc2e344abfe43221631304bb93d9e2 |
+| Schließe die Pop-Ups | PopUp gelesen | https://gist.github.com/MaxxKra/7979490bd78565943564156999f4f299 |
 
 <br>
 <br>
