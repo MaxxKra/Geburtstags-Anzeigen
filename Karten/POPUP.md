@@ -31,7 +31,7 @@ Nicht vergessen ihn anzupassen!
 ```yaml
 type: custom:popup-card
 title: Geburtstag Heute
-entity: input_button.button_geburtstag
+entity: input_button.geburtstag
 dismissable: false
 size: normal
 style: |-
