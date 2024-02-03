@@ -7,12 +7,108 @@ Diese habe ich hier für 1 oder 2 Pop-Up vorbereitet
 
 # HELFER UND AUTOMATISIERUNGEN FÜR EIN POP-UP
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/PopUp_einzeln.gif" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/PopUp_einzeln.gif" alt="Example" width="800"/>
 
+
+## Die Details findest du im Dropdown Menü:
+<br>
+<details>
+
+<summary>:arrow_down_small: DETAILS EIN POPUPS :arrow_down_small:</summary>
+
+<br>
+<br>
+
+Um das Pop-Up automatisch zu Öffnen und über einen `GELESEN-BUTTON` zu schließen, habe ich folgende Helfer und Automatisierungen angelegt
+
+<br>
+
+
+## HELFER
+
+<br>
+
+
+Ich habe folgende Helfer für mein Geburtstags-PopUp erstellt:
+
+<br>
+
+| **HELFER** | **NAME** | **ENTITY ID** | **ICON** |
+| --- | --- | --- | --- |
+| ZEITPLAN | Zeitplan PopUp | schedule.zeitplan_popup | mdi:calendar-clock-outline |
+| TASTE | Geburtstag | input_button.geburtstag | mdi:cake-variant-outline |
+| TASTE | PopUp gelesen | input_button.popup_gelesen | mdi:close-box |
+
+<br>
+<br>
+
+### HELFER SCHEDULE - ZEITPLAN POPUP
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Zeitplan.png" alt="Example" width="600"/>
+
+<br>
+<br>
+
+### HELFER INPUT-BUTTON - GEBURTSTAG
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Button_Geburtstag.png" alt="Example" width="600"/>
+
+<br>
+<br>
+
+### HELFER INPUT-BUTTON - POPUP GELESEN
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_PopUp_Geburtstag_gelesen.png" alt="Example" width="600"/>
+
+<br>
+<br>
+
+### HELFER INPUT-BOOLEAN - SCHALTER POPUP
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/Helfer_Schalter_PopUp.png" alt="Example" width="600"/>
+
+<br>
+<br>
+<br>
+
+## AUTOMATISIERUNGEN
+
+<br>
+
+
+Um die Einrichtung der Automatisierungen für euch einfacher zu gestallten, habe ich für jede ein `blueprint` erstellt.
+Die Import-Adressen dieser Blaupausen sind hier angeführt:<br>
+
+Dies sind die Automatisierungen zu den Popups:
+
+<br>
+
+
+| **AUTOMATISIERUNG** | **NAME** | **BLAUPAUSE** |
+| --- | --- | --- |
+| Öffne ein Pop-Up| Popup Geburtstag | https://gist.github.com/MaxxKra/3dbc1164e0d037bda67911fccead5f36 |
+| Schließe ein Pop-Up | PopUp gelesen | https://gist.github.com/MaxxKra/e656cdc6f1374596167d7d8ada2d9748 |
+
+<br>
+<br>
+
+Um diese Blaupausen einzufügen, gehe auf `EINSTELLUNGEN` / `AUTOMATISIERUNGEN & SZENEN` / `BLAUPAUSEN` und wähle rechts unten `BLAUPAUSE IMPORTIEREN`.
+
+<br>
+
+
+Kopiere dir die Adressen der Blaupausen und füge diese ein. Danach wähle `VORSCHAU` und dann `BLAUPAUSE IMPORTIEREN`.
+Nun ist die Blaupause installiert und kann ausgewählt und mit Daten gefüllt werden.
+
+<br>
+<br>
+
+
+> NICHT VERGESSEN ALLE SENSOR-DATEN, ENTITÄTEN UND DIE BROWSER_ID ANZUPASSEN!
+
+
+</details>
+<br>
 
 # HELFER UND AUTOMATISIERUNGEN FÜR ZWEI POP-UPS
 
-<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/PopUp_mehrere.gif" alt="Example" width="600"/>
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Geburtstagskalender/PopUp_mehrere.gif" alt="Example" width="800"/>
 
 
 ## Die Details findest du im Dropdown Menü:
