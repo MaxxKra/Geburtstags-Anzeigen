@@ -50,6 +50,7 @@ Beispiel:
 | Card Mod | HACS | https://github.com/thomasloven/lovelace-card-mod.git |
 | Button Card | HACS |  https://github.com/custom-cards/button-card.git |
 | Secondary Info | HACS | https://github.com/custom-cards/secondaryinfo-entity-row.git |
+| Card Tools | HACS | https://github.com/thomasloven/lovelace-card-tools.git |
 | Atomic Calendar Revive | HACS | https://github.com/totaldebug/atomic-calendar-revive.git |
 | Layout Card | HCS |  https://github.com/thomasloven/lovelace-layout-card.git |
 | Entities Card | Lovelace | Home Assistant Standard Karte |
