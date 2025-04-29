@@ -235,15 +235,15 @@ Das Template für "Geburtstag Heute" ist in der Dropdown Sektion zum kopieren be
 # **Template Geburtstag Heute**
 #-----------------------------------------------------------
 trigger:
-  - platform: time_pattern
+  - trigger: time_pattern
     minutes: /15
-  - platform: homeassistant
+  - trigger: homeassistant
     event: start
-  - platform: state
+  - trigger: state
     entity_id:
       - input_button.trigger_update
 action:
-  - service: calendar.get_events
+  - action: calendar.get_events
     target:
       entity_id: calendar.geburtstag
     data:
@@ -367,15 +367,15 @@ Das Template für "Geburtstage Liste" ist in der Dropdown Sektion zum kopieren b
 # **Template Geburtstage Liste**
 #-----------------------------------------------------------
 trigger:
-  - platform: time_pattern
+  - trigger: time_pattern
     minutes: /15
-  - platform: homeassistant
+  - trigger: homeassistant
     event: start
-  - platform: state
+  - trigger: state
     entity_id:
       - input_button.trigger_update
 action:
-  - service: calendar.get_events
+  - action: calendar.get_events
     target:
       entity_id: calendar.geburtstag
     data:
