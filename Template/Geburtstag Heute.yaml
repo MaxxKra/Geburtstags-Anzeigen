@@ -29,16 +29,16 @@
 # Auslöser - Aktion starten (Alle 15 Min. und HA Neustart)
 #-----------------------------------------------------------
 trigger:
-  - platform: time_pattern
+  - trigger: time_pattern
     minutes: /15
-  - platform: homeassistant
+  - trigger: homeassistant
     event: start
 
 #-----------------------------------------------------------
 # Aktion - Events abrufen (Heute)
 #-----------------------------------------------------------
 action:
-  - service: calendar.get_events
+  - action: calendar.get_events
     target:
       entity_id: calendar.geburtstag
     data:
